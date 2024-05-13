@@ -3,7 +3,6 @@ body {
     justify-content: center; 
 }
 input {
-    box-shadow: var(--button-shadow, 0px 1px 2px 0px rgba(0, 0, 0, 0.05));
     border-radius: 16px;
     border: 1px solid #E0E0E0;
     background: #FFFFFF;
@@ -29,15 +28,22 @@ input {
 .innerLoginBox {
     width: 300px;
 }
-.loginBtn {
-    float: right;
+button {
     width: 45%;
     height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+}
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.loginBtn {
+    float: right;
 }
 .regBtn {
     float: left;
-    width: 45%;
-    height: 40px;
 }
 @media only screen and (max-width: 400px) {
     input {
